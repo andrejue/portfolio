@@ -55,17 +55,20 @@ const Header = ({ toggleTheme, isDarkMode }) => {
       </div>
       <nav className={`menu__modal ${isModalOpen && "open"}`} id="menu" ref={modalRef}>
                <ul className="nav__list">
-                  <a href="#">
+                  <a href="#about">
                      <li className="nav__item">Sobre Mim</li>
                   </a>
                   <a href="#project1">
                      <li className="nav__item">Projetos</li>
                   </a>
-                  <a href="#">
+                  <a href="#contact">
+                     <li className="nav__item">Contato</li>
+                  </a>
+                  <a href="https://github.com/andrejue"  target="_blank" rel="noreferrer">
                      <li className="nav__item">Github</li>
                   </a>
-                  <a href="#">
-                     <li className="nav__item">Contato</li>
+                  <a href="https://www.linkedin.com/in/andrejue/" target="_blank" rel="noreferrer">
+                     <li className="nav__item">Linkedin</li>
                   </a>
                </ul>
       </nav>
