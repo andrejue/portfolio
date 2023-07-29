@@ -1,0 +1,238 @@
+.intro {
+   padding-bottom: 2rem;
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.intro__h2 {
+   margin-bottom:  1rem;
+   color: #252525;
+   font-family: 'Josefin Sans', sans-serif;
+   font-weight: 700;
+   font-size: 3.4rem;
+   line-height: 1.3;
+   text-shadow: 2px 2px 5px rgba(49, 49, 49, 0.407);
+}
+
+.hi {
+   font-size: 2rem;
+}
+
+.intro p {
+   color: #595959;
+   font-size: 1.3rem;
+   font-weight: 600;
+   text-shadow: 2px 2px 3px rgba(49, 49, 49, 0.277);
+}
+
+.links {
+   margin-top: 1rem;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+.github__logo {
+   filter: drop-shadow(3px 3px 4px rgba(28, 28, 28, 0.448));
+   animation: float 5s ease-in-out infinite;
+}
+
+.linkedin__logo {
+   width: 42px;
+   height: 42px;
+   filter: drop-shadow(3px 3px 4px rgba(66, 66, 66, 0.351));
+   animation: float 5.4s ease-in-out infinite;
+}
+
+.photo {
+   max-width: 400px;
+   margin: 3rem;
+   animation: bordermorph 12s ease-in-out infinite;
+   box-shadow: 0 4px 16px 0 rgba( 31, 38, 135, 0.37 );
+   pointer-events: none;
+}
+
+.skills {
+   display: flex;
+   flex-direction: column;
+   margin-left: 1rem;
+   gap: 2rem;
+   animation: float 5s ease-in-out infinite;
+}
+
+aside img {
+   max-width: 50px;
+   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.374));
+}
+
+@media (max-width: 1200px) {
+
+   .intro {
+      padding-top: 1.7rem;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+   }
+
+   .intro__h2 {
+      font-size: 2.4rem;
+   }
+
+   .hi {
+      font-size: 1.5rem;
+   }
+
+   .photo {
+      max-width: 280px;
+      margin: 1.5rem;
+   }
+
+   aside img {
+      max-width: 40px;
+      filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.374));
+   }
+}
+
+@media (max-width: 850px) {
+
+   .intro {
+      padding-top: 8rem;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+   }
+
+   .intro__h2 {
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 700;
+      font-size: 2.4rem;
+      line-height: 1.3;
+      text-shadow: 2px 2px 5px rgba(49, 49, 49, 0.407);
+   }
+
+   .hi {
+      font-size: 1.5rem;
+   }
+
+   .photo {
+      max-width: 280px;
+      margin: 1.5rem;
+   }
+
+      .skills {
+         flex-direction: row;
+      }
+
+   aside .skills img {
+      max-width: 40px;
+   }
+}
+
+@media (max-width: 420px) {
+
+   .intro {
+      padding-bottom: 1rem;
+      margin-bottom: 5rem;
+      height: 90vh;
+   }
+
+   .intro__h2 {
+      margin-bottom:  0.5rem;
+      font-size: 1.7rem;
+   }
+
+   .texto__intro > p {
+      font-size: 1rem;
+   }
+
+   .photo {
+      width: 200px;
+   }
+
+   aside {
+      align-items: center;
+      justify-content: center;
+   }
+
+   .skills {
+      flex-direction: row;
+      gap: 1.2rem;
+   }
+
+   aside img {
+      max-width: 30px;
+   }
+
+}
+
+@media (max-width: 340px) {
+
+   .intro {
+      padding-bottom: 1rem;
+      margin-bottom: 5rem;
+      height: 86vh;
+   }
+
+   .intro__h2 {
+      margin-bottom:  0rem;
+      font-size: 1.4rem;
+   }
+
+   .texto__intro > p {
+      font-size: 0.8rem;
+   }
+
+   .github__logo, .linkedin__logo {
+      width: 30px;
+      height: 30px;
+   }
+
+   .photo {
+      width: 200px;
+   }
+
+   aside {
+      align-items: center;
+      justify-content: center;
+   }
+
+   .skills {
+      flex-direction: row;
+      gap: 1.2rem;
+   }
+
+   aside img {
+      max-width: 30px;
+   }
+
+}
+
+
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@keyframes bordermorph {
+   0% {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+      border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
