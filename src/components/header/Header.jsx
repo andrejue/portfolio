@@ -3,8 +3,9 @@ import "./styles/glitch.css";
 import { useState, useRef } from "react";
 import menuIcon from "../../assets/menu-icon-40.png";
 import mePixelized from "../../assets/me_pixelized.png";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
+import Curriculo from '../../../public/pdf/Andre de Souza - Curriculum.pdf';
 
 const Header = ({ toggleTheme, isDarkMode }) => {
 
@@ -41,6 +42,7 @@ const Header = ({ toggleTheme, isDarkMode }) => {
                   <li className="nav__item"><a href="#contact" className="nav__link">Contato</a></li>
                   <li className="nav__item"><a href="https://github.com/andrejue" target="_blank" rel="noreferrer" className="nav__link">Github</a></li>
                   <li className="nav__item"><a href="https://www.linkedin.com/in/andrejue/" target="_blank" rel="noreferrer" className="nav__link">Linkedin</a></li>
+                  <li className="nav__item"><a href={Curriculo} target="_blank" rel="noopener noreferrer" className="nav__link">Currículo PDF</a></li>
                </ul>
             </nav>
             <div className="darkmode__btn">
