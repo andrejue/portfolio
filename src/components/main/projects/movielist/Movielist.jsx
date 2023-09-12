@@ -5,10 +5,10 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/a11y";
 
-import img1 from "./assets/meme_generator_preview.jpg";
-import img2 from "./assets/meme_generator_preview2.jpg";
-import img3 from "./assets/meme_generator_preview3.jpg";
-import img4 from "./assets/meme_generator_preview4.jpg";
+import img1 from "./assets/preview.jpg";
+import img2 from "./assets/preview2.jpg";
+import img3 from "./assets/preview3.jpg";
+import img4 from "./assets/preview4.jpg";
 
 import Github from "../../../../assets/github_logo.png";
 import Vercel from "../../../../assets/vercel_logo.png";
@@ -46,41 +46,38 @@ export default function MemeGenerator() {
       </Swiper>
 
       <div className="description__container">
-        <h2>Meme Generator</h2>
+        <h2>MovieZ</h2>
+        <p>Um catálogo de filmes com a interface inspirada no app Stremio.</p>
         <p>
-          Um simples projeto no qual você pode fazer um novo meme sobre uma
-          imagem de algum meme famoso.
+          Acessa e consome a API do TMDB (The movie database), que traz muitos
+          dados sobre cada filme ou série. O projeto também conta com carroséis,
+          React router DOM, React Player.
         </p>
         <p>
-          O texto é colocado sobre a imagem (que é aleatória e que vem de uma
-          fonte externa), sendo um na parte de cima e outro embaixo, tal qual
-          aqueles memes antigos que víamos na internet em 2010. (Limite de
-          apenas 2 linhas de texto).
+          Cada filme tem sua própria tela, inspirada no Stremio, que conta com
+          informações do filme ou da série, contendo um trailer em iframe (caso
+          o item tenha um trailer oficial).
         </p>
-        <p>
-          O <strong>mais legal</strong> deste projeto é o botão para baixar o
-          elemento inteiro do meme. A imagem atual com o texto que o usuário
-          quiser sobre ela.
-        </p>
+        <p>Efeitos em CSS usando SASS são usados no projeto também.</p>
         <div className="links">
           <a
-            href="https://github.com/andrejue/meme-generator"
+            href="https://github.com/andrejue/lista_filmes"
             className="a"
             target="_blank"
             rel="noreferrer"
           >
-            <img src={Github} alt="" />
+            <img src={Github} alt="GitHub Logo" />
             <span className="span">
               Repositório no github <ArrowSquareOut size={20} />
             </span>
           </a>
           <a
-            href="https://memegenerator-andrejue.vercel.app/"
+            href="https://moviezlist.vercel.app/"
             className="a"
             target="_blank"
             rel="noreferrer"
           >
-            <img src={Vercel} alt="" />
+            <img src={Vercel} alt="Vercel Logo" />
             <span className="span">
               Veja funcionando <ArrowSquareOut size={20} />{" "}
             </span>
